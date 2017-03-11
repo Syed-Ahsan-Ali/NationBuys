@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -133,6 +134,35 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\Agencies.cshtml" />
+    <Content Include="Views\Home\AgencyDetails.cshtml" />
+    <Content Include="Views\Home\Agent.cshtml" />
+    <Content Include="Views\Home\AgentDetails.cshtml" />
+    <Content Include="Views\Home\Apartments.cshtml" />
+    <Content Include="Views\Home\blogIColumnWithLeftsidebar.cshtml" />
+    <Content Include="Views\Home\blogIColumnWithoutsidebar.cshtml" />
+    <Content Include="Views\Home\blogIColumnWithRightsidebar.cshtml" />
+    <Content Include="Views\Home\blogIIColumnWithLeftsidebar.cshtml" />
+    <Content Include="Views\Home\blogIIColumnWithoutsidebar.cshtml" />
+    <Content Include="Views\Home\blogIIColumnWithRightsidebar.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Properties.cshtml" />
+    <Content Include="Views\Home\propertiesIIColumnWithLeftsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIIColumnWithoutsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIIColumnWithRightsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIIIColumnWithLeftsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIIIColumnWithoutsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIIIColumnWithRightsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIVColumnWithLeftsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIVColumnWithoutsidebar.cshtml" />
+    <Content Include="Views\Home\propertiesIVColumnWithRightsidebar.cshtml" />
+    <Content Include="Views\Home\Year.cshtml" />
+    <Content Include="Views\Home\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,8 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="wp-content\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

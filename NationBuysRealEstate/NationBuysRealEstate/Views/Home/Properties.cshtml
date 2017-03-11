@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<NationBuysRealEstate.Property>
 @{
     Layout = null;
 }
@@ -170,6 +170,8 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
                 </div>
             </div>
         </section><!-- ** Title Fullwidth Background End ** -->
+    @foreach (var v in Model)
+    {
         <div id="main">
             <div id="main-container" class="container">
                 <section id="primary" class="content-full-width">
@@ -190,320 +192,30 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
                             </div>
                             <div class="property-details">
                                 <div class="property-details-inner">
-                                    <h2><a href='luxury-villa-in-rego-park/index.html'>Luxury Villa In Rego Park</a></h2>
+                                    <h2><a href='luxury-villa-in-rego-park/index.html'>@v.Property_For</a></h2>
                                     <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 37000</li>
-                                        <li><span class="bed"></span>Beds : 6</li>
-                                        <li><span class="bath"></span>Baths : 4</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 5</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
+                                        <li><span class="fa fa-certificate"></span>Area : @v.Area</li>
+                                        <li><span class="bed"></span>Beds : @v.Beds</li>
+                                        <li><span class="bath"></span>Baths : @v.Baths</li>
+                                        <li><span class="fa fa-building-o"></span>Floors : @v.Floors</li>
+                                        <li><span class="garage"></span>Garage : @v.Garrage</li>
                                     </ul>
                                     <div class="property-content">
-                                        <span class="property-price">$56000</span>                                        <a href="luxury-villa-in-rego-park/index.html" class="dt-sc-button small">View Details</a>
+                                        <span class="property-price">@v.Price</span>                                    
+                                            <a href="luxury-villa-in-rego-park/index.html" class="dt-sc-button small">View Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb  dt-property-gallery">
-                                <ul class="porperty-slider"><li><a href='lovelace-road-greenfield/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property2-338x229.jpg' width='338' height='229' title='Lovelace Road Greenfield' alt='Lovelace Road Greenfield' /></a></li><li><a href='lovelace-road-greenfield/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property3-338x229.jpg' width='338' height='229' title='Lovelace Road Greenfield' alt='Lovelace Road Greenfield' /></a></li><li><a href='lovelace-road-greenfield/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property4-338x229.jpg' width='338' height='229' title='Lovelace Road Greenfield' alt='Lovelace Road Greenfield' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sold"><a href='../contract_type/sold/index.html'>Sold</a></span><span class='property-type'><a href='../property_type/vacant-land/index.html'>Vacant Land</a></span>
-                                </div>
-
-                                <a href="lovelace-road-greenfield/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='lovelace-road-greenfield/index.html'>Lovelace Road Greenfield</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 34000</li>
-                                        <li><span class="bed"></span>Beds : 3</li>
-                                        <li><span class="bath"></span>Baths : 5</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 2</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$45000</span>                                        <a href="lovelace-road-greenfield/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='land-in-central-park/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property3-338x229.jpg' width='338' height='229' title='Land In Central Park' alt='Land In Central Park' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>Rent</a></span><span class='property-type'><a href='../property_type/warehouse/index.html'>Warehouse</a></span>
-                                </div>
-
-                                <a href="land-in-central-park/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='land-in-central-park/index.html'>Land In Central Park</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 56000</li>
-                                        <li><span class="bed"></span>Beds : 3</li>
-                                        <li><span class="bath"></span>Baths : 2</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 4</li>
-                                        <li><span class="garage"></span>Garage : 2</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$55000</span>                                        <a href="land-in-central-park/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third first">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='central-park-view/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property4-338x229.jpg' width='338' height='229' title='Central Park View' alt='Central Park View' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sale"><a href='../contract_type/sale/index.html'>Sale</a></span><span class='property-type'><a href='../property_type/office/index.html'>Office</a></span>
-                                </div>
-
-                                <a href="central-park-view/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='central-park-view/index.html'>Central Park View</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 65000</li>
-                                        <li><span class="bed"></span>Beds : 4</li>
-                                        <li><span class="bath"></span>Baths : 3</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 5</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$56000</span>                                        <a href="central-park-view/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='limestone-estate-2/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property5-338x229.jpg' width='338' height='229' title='Limestone Estate' alt='Limestone Estate' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sold"><a href='../contract_type/sold/index.html'>Sold</a></span><span class='property-type'><a href='../property_type/guest-house/index.html'>Guest House</a></span>
-                                </div>
-
-                                <a href="limestone-estate-2/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='limestone-estate-2/index.html'>Limestone Estate</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 45000</li>
-                                        <li><span class="bed"></span>Beds : 3</li>
-                                        <li><span class="bath"></span>Baths : 2</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 4</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$45000</span>                                        <a href="limestone-estate-2/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='snowy-mountain-cabin-2/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property6-338x229.jpg' width='338' height='229' title='Snowy Mountain Cabin' alt='Snowy Mountain Cabin' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>Rent</a></span><span class='property-type'><a href='../property_type/single-family/index.html'>Single Family</a></span>
-                                </div>
-
-                                <a href="snowy-mountain-cabin-2/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='snowy-mountain-cabin-2/index.html'>Snowy Mountain Cabin</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 35000</li>
-                                        <li><span class="bed"></span>Beds : 4</li>
-                                        <li><span class="bath"></span>Baths : 5</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 3</li>
-                                        <li><span class="garage"></span>Garage : 2</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$55000</span>                                        <a href="snowy-mountain-cabin-2/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third first">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='the-urban-life/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property6-338x229.jpg' width='338' height='229' title='The Urban Life' alt='The Urban Life' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sale"><a href='../contract_type/sale/index.html'>Sale</a></span><span class='property-type'><a href='../property_type/farm-house/index.html'>Farm House</a></span>
-                                </div>
-
-                                <a href="the-urban-life/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='the-urban-life/index.html'>The Urban Life</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 45000</li>
-                                        <li><span class="bed"></span>Beds : 2</li>
-                                        <li><span class="bath"></span>Baths : 2</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 2</li>
-                                        <li><span class="garage"></span>Garage : 3</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$35000</span>                                        <a href="the-urban-life/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='four-story-apartment/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property7-338x229.jpg' width='338' height='229' title='Four Story Apartment' alt='Four Story Apartment' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sold"><a href='../contract_type/sold/index.html'>Sold</a></span><span class='property-type'><a href='../property_type/villa/index.html'>Villa</a></span>
-                                </div>
-
-                                <a href="four-story-apartment/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='four-story-apartment/index.html'>Four Story Apartment</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 32000</li>
-                                        <li><span class="bed"></span>Beds : 2</li>
-                                        <li><span class="bath"></span>Baths : 1</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 4</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$45000</span>                                        <a href="four-story-apartment/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third ">
-                        <div class="property-item">
-
-                            <div class="property-thumb ">
-                                <ul class="porperty-slider"><li><a href='snowy-mountain-cabin/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property8-338x229.jpg' width='338' height='229' title='Snowy Mountain Cabin' alt='Snowy Mountain Cabin' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>Rent</a></span><span class='property-type'><a href='../property_type/residential/index.html'>Residential</a></span>
-                                </div>
-
-                                <a href="snowy-mountain-cabin/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='snowy-mountain-cabin/index.html'>Snowy Mountain Cabin</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 33000</li>
-                                        <li><span class="bed"></span>Beds : 2</li>
-                                        <li><span class="bath"></span>Baths : 3</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 2</li>
-                                        <li><span class="garage"></span>Garage : 2</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$50000</span>                                        <a href="snowy-mountain-cabin/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" column dt-sc-one-third first">
-                        <div class="property-item">
-
-                            <div class="property-thumb  dt-property-gallery">
-                                <ul class="porperty-slider"><li><a href='cabin-in-the-woods/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property10-338x229.jpg' width='338' height='229' title='Cabin In The Woods' alt='Cabin In The Woods' /></a></li><li><a href='cabin-in-the-woods/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property4-338x229.jpg' width='338' height='229' title='Cabin In The Woods' alt='Cabin In The Woods' /></a></li></ul>
-
-                                <div class="property-thumb-meta">
-                                    <span class="property-contract-type sold"><a href='../contract_type/sold/index.html'>Sold</a></span><span class='property-type'><a href='../property_type/single-family/index.html'>Single Family</a></span>
-                                </div>
-
-                                <a href="cabin-in-the-woods/index.html">
-                                    <div class="image-overlay"></div>
-                                </a>
-
-                            </div>
-                            <div class="property-details">
-                                <div class="property-details-inner">
-                                    <h2><a href='cabin-in-the-woods/index.html'>Cabin In The Woods</a></h2>
-                                    <ul class="property-meta">
-                                        <li><span class="fa fa-certificate"></span>Area : 25000</li>
-                                        <li><span class="bed"></span>Beds : 3</li>
-                                        <li><span class="bath"></span>Baths : 2</li>
-                                        <li><span class="fa fa-building-o"></span>Floors : 3</li>
-                                        <li><span class="garage"></span>Garage : 1</li>
-                                    </ul>
-                                    <div class="property-content">
-                                        <span class="property-price">$45000</span>                                        <a href="cabin-in-the-woods/index.html" class="dt-sc-button small">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 	        <div class="dt-sc-clear"></div>
-                    <div class="dt-sc-hr-invisible"> </div>
-                    <!-- **Pagination** -->
-                    <div class="pagination">
-                        <div class="prev-post"></div>
-                        <ul class=''><li class='active-page'>1</li><li><a href='page/2/index.html' class='inactive'>2</a></li><li><a href='page/3/index.html' class='inactive'>3</a></li><li><a href='page/4/index.html' class='inactive'>4</a></li></ul>				<div class="next-post"><a href="page/2/index.html">Next <span class="fa fa-angle-double-right"></span></a></div>
-                    </div><!-- **Pagination - End** -->
+                    
+                  
                 </section>
 
 
             </div>
         </div>
+    }
         <!--</div>--><!-- **Main - End** -->
         <!-- **Footer** -->
         @{Html.RenderPartial("_Footer");}<!-- **Footer - End** -->

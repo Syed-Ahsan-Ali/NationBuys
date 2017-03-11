@@ -51,42 +51,11 @@ namespace RealEstateUpdate2.Controllers
         {
             return View();
         }
-        public ActionResult propertiesIIColumnWithLeftsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIIColumnWithoutsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIIColumnWithRightsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIIIColumnWithLeftsidebar()
-        {
-            return View();
-        }
         public ActionResult propertiesIIIColumnWithoutsidebar()
         {
             return View();
         }
-        public ActionResult propertiesIIIColumnWithRightsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIVColumnWithLeftsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIVColumnWithoutsidebar()
-        {
-            return View();
-        }
-        public ActionResult propertiesIVColumnWithRightsidebar()
-        {
-            return View();
-        }
+        
         public ActionResult Login()
         {
             //try

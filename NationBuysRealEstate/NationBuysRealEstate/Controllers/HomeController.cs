@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
+using NationBuysRealEstate;
 //using System.Data.Entity.Validation;
 
 using System.Diagnostics;
@@ -14,6 +15,7 @@ namespace RealEstateUpdate2.Controllers
     {
         // RealEstateEntities1 Entities = new RealEstateEntities1();
         // GET: Home
+        NationBuysDB1Entities obj = new NationBuysDB1Entities();
         public ActionResult Index()
         {
             return View();
@@ -21,7 +23,7 @@ namespace RealEstateUpdate2.Controllers
 
         public ActionResult Properties()
         {
-            return View();
+            return View(obj.Properties.ToList());
         }
         public ActionResult ContactUs()
         {

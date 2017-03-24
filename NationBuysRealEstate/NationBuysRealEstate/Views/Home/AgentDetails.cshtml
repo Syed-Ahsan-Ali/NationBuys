@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<NationBuysRealEstate.User>
+
 @{
     Layout = null;
 }
@@ -11,27 +12,36 @@
 <!--[if gt IE 9]>  <html> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en-US">
- <!--<![endif]-->
+<!--<![endif]-->
 <!-- Mirrored from wedesignthemes.com/themes/dt-realestate/dt_agents/anderson/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Feb 2017 16:59:03 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
-    <title> | Anderson</title>
+    @{
+        if (Model != null)
+        {
+            <title> | @Model.First().Name </title>
+        }
+        else
+        {
+            <title> | No Details </title>
+        }
+    }
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="../../xmlrpc.php" />
 
     <script type='text/javascript'>
-	var mytheme_urls = {
-		 theme_base_url:'http://wedesignthemes.com/themes/dt-realestate/wp-content/themes/realestate/'
- 		,framework_base_url:'http://wedesignthemes.com/themes/dt-realestate/wp-content/themes/realestate/framework/'
- 		,ajaxurl:'http://wedesignthemes.com/themes/dt-realestate/wp-admin/admin-ajax.php'
- 		,url:'http://wedesignthemes.com/themes/dt-realestate'
- 		,stickynav:'enable'
- 		,scroll:'enable'
- 		,isRTL:''
-	};
+        var mytheme_urls = {
+            theme_base_url: 'http://wedesignthemes.com/themes/dt-realestate/wp-content/themes/realestate/'
+            , framework_base_url: 'http://wedesignthemes.com/themes/dt-realestate/wp-content/themes/realestate/framework/'
+            , ajaxurl: 'http://wedesignthemes.com/themes/dt-realestate/wp-admin/admin-ajax.php'
+            , url: 'http://wedesignthemes.com/themes/dt-realestate'
+            , stickynav: 'enable'
+            , scroll: 'enable'
+            , isRTL: ''
+        };
     </script>
     <link href='../../wp-content/themes/realestate/images/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <link href='../../wp-content/themes/realestate/images/apple-touch-icon.html' rel='apple-touch-icon-precomposed' />
@@ -42,8 +52,8 @@
     <link rel="alternate" type="application/rss+xml" title="RealEstate &raquo; Comments Feed" href="../../comments/feed/index.html" />
     <link rel="alternate" type="application/rss+xml" title="RealEstate &raquo; Anderson Comments Feed" href="feed/index.html" />
     <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
-			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3" } };
+        !function (a, b, c) { function d(a) { var c, d, e, f = b.createElement("canvas"), g = f.getContext && f.getContext("2d"), h = String.fromCharCode; if (!g || !g.fillText) return !1; switch (g.textBaseline = "top", g.font = "600 32px Arial", a) { case "flag": return g.fillText(h(55356, 56806, 55356, 56826), 0, 0), f.toDataURL().length > 3e3; case "diversity": return g.fillText(h(55356, 57221), 0, 0), c = g.getImageData(16, 16, 1, 1).data, d = c[0] + "," + c[1] + "," + c[2] + "," + c[3], g.fillText(h(55356, 57221, 55356, 57343), 0, 0), c = g.getImageData(16, 16, 1, 1).data, e = c[0] + "," + c[1] + "," + c[2] + "," + c[3], d !== e; case "simple": return g.fillText(h(55357, 56835), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0]; case "unicode8": return g.fillText(h(55356, 57135), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0] } return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i; for (i = Array("simple", "flag", "unicode8", "diversity"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
     </script>
     <style type="text/css">
         img.wp-smiley,
@@ -93,9 +103,9 @@
     <script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
     <script type='text/javascript' src='../../wp-includes/js/plupload/plupload.full.mincc91.js?ver=2.1.8'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php"};
-/* ]]> */
+        /* <![CDATA[ */
+        var dsidxAjaxHandler = { "ajaxurl": "http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php" };
+        /* ]]> */
     </script>
     <script type='text/javascript' src='http://cdn1.diverse-cdn.com/api/combo-js/config=dsidxpress.js/d4c7fb?ver=2.1.40'></script>
     <script type='text/javascript' src='../../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min5223.js?ver=5.2.6'></script>
@@ -144,14 +154,14 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
     <link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embeddbf8?url=http%3A%2F%2Fwedesignthemes.com%2Fthemes%2Fdt-realestate%2Fdt_agents%2Fanderson%2F&amp;format=xml" />
     <meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <script type="text/javascript">
-				if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
-				localdsidx.pluginUrl = "../../wp-content/plugins/dsidxpress/index.html";
-				localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
+        if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+        localdsidx.pluginUrl = "../../wp-content/plugins/dsidxpress/index.html";
+        localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
     </script>
     <script type="text/javascript">
-				if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
-				localdsidx.pluginUrl = "../../wp-content/plugins/dsidxpress/index.html";
-				localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
+        if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+        localdsidx.pluginUrl = "../../wp-content/plugins/dsidxpress/index.html";
+        localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
     </script>
 </head>
 <body class="single single-dt_agents postid-1773">
@@ -162,34 +172,46 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
 
         <div id="header-wrapper">
             <!-- **Header** -->
-            @{Html.RenderPartial("~/Views/Home/_Header.cshtml");}<!-- **Header - End** -->
+            @{Html.RenderPartial("~/Views/Home/_Header.cshtml");
+            }<!-- **Header - End** -->
         </div><!-- Header Wrapper -->
         <!-- **Main** -->
         <!--<div id="main">-->
-        <!-- ** Title Fullwidth Background ** --><section class='breadcrumb-section no-image ' style=''><div class='breadcrumb-wrapper'>	<div class="container">		<h1 class='page-title'>Nancy</h1><div class="breadcrumb">				
-					<a href="http://wedesignthemes.com/themes/dt-realestate">Home</a><span  class = "fa default" >  </span><h2>Nancy</h2></div>	</div></div></section><!-- ** Title Fullwidth Background End ** -->
+        <!-- ** Title Fullwidth Background ** --><section class='breadcrumb-section no-image ' style=''>
+            <div class='breadcrumb-wrapper'>
+                <div class="container">
+                    <h1 class='page-title'></h1><div class="breadcrumb">
+                        <a href="http://wedesignthemes.com/themes/dt-realestate">Home</a><span class="fa default">  </span><h2>Agent Details</h2>
+                    </div>
+                </div>
+            </div>
+        </section><!-- ** Title Fullwidth Background End ** -->
         <div id="main">
             <div id="main-container" class="container">
-
                 <!-- ** Primary Section ** -->
                 <section id="primary" class="content-full-width">
                     <div class="dt-sc-agent-single">
-                        <div class="dt-sc-agents-list">
-                            <div class="dt-sc-agent-thumb">
-                                <img width="400" height="420" src="../../wp-content/uploads/2014/04/agent11.jpg" class="attachment-full size-full wp-post-image" alt="agent11" srcset="http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11.jpg 400w, http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11-286x300.jpg 286w" sizes="(max-width: 400px) 100vw, 400px" />
-                            </div>
-                            <div class="dt-sc-agent-details">
-                                <h4>Nancy</h4>
-                                <div class="dt-sc-agent-contact">
-                                    <p> <span class="fa fa-mobile"> </span> 9853453478 </p><p> <span class="fa fa-phone"> </span> 234-254-4564 </p><p> <span class="fa fa-envelope"> </span> <a href="mailto:name@someemail.com">name@someemail.com</a></p>
+                        @{
+                            if (Model != null)
+                            {
+                                <div class="dt-sc-agents-list">
+                                    <div class="dt-sc-agent-thumb">
+                                        <img width="400" height="420" src="../../wp-content/uploads/2014/04/agent11.jpg" class="attachment-full size-full wp-post-image" alt="agent11" srcset="http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11.jpg 400w, http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11-286x300.jpg 286w" sizes="(max-width: 400px) 100vw, 400px" />
+                                    </div>
+                                    <div class="dt-sc-agent-details">
+                                        <h4>@Model.First().Name</h4>
+                                        <div class="dt-sc-agent-contact">
+                                            <p> <span class="fa fa-mobile"> </span> @Model.First().OfficeNumber </p><p> <span class="fa fa-phone"> </span> @Model.First().Phone </p><p> <span class="fa fa-envelope"> </span> <a href="mailto:name@someemail.com">@Model.First().Email</a></p>
 
-                                    <ul class="dt-sc-social-icons"><li class='tumblr'><a href='#'><span class='fa fa-tumblr' /></a></li><li class='facebook'><a href='#'><span class='fa fa-facebook' /></a></li><li class='twitter'><a href='#'><span class='fa fa-twitter' /></a></li><li class='youtube'><a href='#'><span class='fa fa-youtube' /></a></li></ul>
+                                            <ul class="dt-sc-social-icons"><li class='tumblr'><a href='#'><span class='fa fa-tumblr' /></a></li><li class='facebook'><a href='#'><span class='fa fa-facebook' /></a></li><li class='twitter'><a href='#'><span class='fa fa-twitter' /></a></li><li class='youtube'><a href='#'><span class='fa fa-youtube' /></a></li></ul>
+                                        </div>
+                                        <div class="dt-sc-agent-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula bibendum elit, at vestibulum enim tempor a. Nulla ultrices erat et erat aliquet aliquet. Nunc ligula nulla, cursus non nunc et, elementum ultrices arcu.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dt-sc-agent-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula bibendum elit, at vestibulum enim tempor a. Nulla ultrices erat et erat aliquet aliquet. Nunc ligula nulla, cursus non nunc et, elementum ultrices arcu.</p>
-                                </div>
-                            </div>
-                        </div>
+                            }
+                        }
                     </div>
                     <div class="dt-sc-border-title"><h2> <span>Assigned Properties</span> </h2></div>
                     <div class="dt-sc-hr-invisible-small"> </div>
@@ -300,10 +322,10 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
             </div>
         </div>
 
-            <!--</div>--><!-- **Main - End** -->
-            <!-- **Footer** -->
-            @{Html.RenderPartial("_Footer");}<!-- **Footer - End** -->
-        </div><!-- **Wrapper - End** -->
+        <!--</div>--><!-- **Main - End** -->
+        <!-- **Footer** -->
+        @{Html.RenderPartial("_Footer");}<!-- **Footer - End** -->
+    </div><!-- **Wrapper - End** -->
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.inview62d0.js?ver=4.5.3'></script>
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.tabs.min62d0.js?ver=4.5.3'></script>
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.donutchart62d0.js?ver=4.5.3'></script>
@@ -315,9 +337,9 @@ var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-reale
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.quovolver.min62d0.js?ver=4.5.3'></script>
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.colorbox62d0.js?ver=4.5.3'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var dt_plupload = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php","plupload":{"browse_button":"dt-frontend-uploader","file_data_name":"wpuf_featured_img","max_file_size":"134217728b","url":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php?action=wpuf_featured_img","multipart":true,"urlstream_upload":true}};
-/* ]]> */
+        /* <![CDATA[ */
+        var dt_plupload = { "ajaxurl": "http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php", "plupload": { "browse_button": "dt-frontend-uploader", "file_data_name": "wpuf_featured_img", "max_file_size": "134217728b", "url": "http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php?action=wpuf_featured_img", "multipart": true, "urlstream_upload": true } };
+        /* ]]> */
     </script>
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/shortcodes62d0.js?ver=4.5.3'></script>
     <script type='text/javascript' src='../../wp-content/plugins/designthemes-core-features/shortcodes/js/tooltip/jquery.tooltipster.min62d0.js?ver=4.5.3'></script>
@@ -329,9 +351,9 @@ var dt_plupload = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate
     <script type='text/javascript' src='../../wp-content/plugins/dsidxpress/js/widget-listings5a0d.js?ver=2.1.40'></script>
     <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
-/* ]]> */
+        /* <![CDATA[ */
+        var _wpcf7 = { "loaderUrl": "http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ..." };
+        /* ]]> */
     </script>
     <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scriptsc1f9.js?ver=4.4.2'></script>
     <script type='text/javascript' src='../../wp-content/themes/realestate/framework/js/public/easing62d0.js?ver=4.5.3'></script>
@@ -356,9 +378,9 @@ var _wpcf7 = {"loaderUrl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/w
     <script type='text/javascript' src='../../wp-includes/js/jquery/ui/menu.mine899.js?ver=1.11.4'></script>
     <script type='text/javascript' src='../../wp-includes/js/wp-a11y.min62d0.js?ver=4.5.3'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
-/* ]]> */
+        /* <![CDATA[ */
+        var uiAutocompleteL10n = { "noResults": "No search results.", "oneResult": "1 result found. Use up and down arrow keys to navigate.", "manyResults": "%d results found. Use up and down arrow keys to navigate." };
+        /* ]]> */
     </script>
     <script type='text/javascript' src='../../wp-includes/js/jquery/ui/autocomplete.mine899.js?ver=1.11.4'></script>
     <script type='text/javascript' src='../../wp-content/plugins/dsidxpress/js/autocomplete5a0d.js?ver=2.1.40'></script>

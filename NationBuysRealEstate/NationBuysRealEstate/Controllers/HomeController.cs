@@ -15,7 +15,7 @@ namespace RealEstateUpdate2.Controllers
     {
         // RealEstateEntities1 Entities = new RealEstateEntities1();
         // GET: Home
-        NationBuysDB1Entities obj = new NationBuysDB1Entities();
+        NationBuysRealEsateEntities obj = new NationBuysRealEsateEntities();
         public ActionResult Index()
         {
             return View();
@@ -81,11 +81,25 @@ namespace RealEstateUpdate2.Controllers
         }
         public ActionResult Agent()
         {
-            return View();
+            return View(obj.Users.ToList().Where(p => p.User_Type == "Agent" || p.User_Type == "Admin"));
         }
         public ActionResult AgentDetails()
         {
-            return View();
+            if (!string.IsNullOrWhiteSpace(Request.Url.Query))
+            {
+                var agent=obj.Users.ToList().Where(p => p.Name == Request.Url.Query.Split('?')[1]);
+                if (agent != null && agent.Count() != 0)
+                {
+                    return View(agent);
+                }
+                return View();
+            }
+            else
+            {
+                return View();
+            }
+            
+
         }
         public ActionResult Agencies()
         {

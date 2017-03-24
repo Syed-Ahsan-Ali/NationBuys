@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----*****---- << Color >> ----*****----*/
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a, #logo h2 a span, .widget ul li a:hover, .widget.tweetbox ul.tweet_list li a a:before, #secondary ul.product_list_widget li .amount, #secondary .widget.woocommerce h3.widgettitle:hover a, .dt-sc-ico-content.type1:hover h5 a, .dt-sc-ico-content.type2:hover h5 a, .dt-sc-ico-content.type2:hover .icon, .product .summary .price, .side-nav-container ul li a:hover, .side-nav-container ul li.current_page_item a, .portfolio.dt-sc-one-column:hover .portfolio-detail h5 a:hover, .portfolio.dt-sc-one-column-with-sidebar .portfolio-detail h5 a:hover, ul.commentlist li .author-name a:hover, .error-info h2 span.error, #footer h1 a:hover, #footer h2 a:hover, #footer h3 a:hover, #footer h4 a:hover, #footer h5 a:hover, #footer h6 a:hover, #footer .tweets a:hover, h5.dt-sc-toggle:hover, h5.dt-sc-toggle a:hover, h5.dt-sc-toggle-accordion:hover, h5.dt-sc-toggle-accordion a:hover, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a:hover, .dt-sc-toggle-frame h5.dt-sc-toggle a:hover, h5.dt-sc-toggle.active, h5.dt-sc-toggle.active a, h5.dt-sc-toggle-accordion.active a, h5.dt-sc-toggle-accordion.active, .entry-metadata a:hover, .entry-body .read-more:hover, .entry-body .read-more:hover span, .dt-sc-pr-tb-col.selected .tb-title h5, #secondary .widget.tweetbox ul.tweet_list li a, #order_review .product-quantity, #order_review .total td, .breadcrumb-section h1, .breadcrumb h2, .megamenu-child-container > ul.sub-menu > li > a:hover, .megamenu-child-container > ul.sub-menu > li > a:hover .menu-item-description, .property-item-list .property-price, .dsidx-results li.dsidx-prop-summary .dsidx-prop-features div:before, .dt-sc-ico-content.type2 .icon span:before, .dt-sc-ico-content.type4 .icon span, /** Menu Styles **/ #main-menu ul li li a:hover, .megamenu-child-container ul.sub-menu > li > ul li.current_page_item a, .megamenu-child-container ul.sub-menu > li > ul li.current_page_ancestor a, .megamenu-child-container ul.sub-menu > li > ul li.current-menu-item a, .megamenu-child-container ul.sub-menu > li > ul li.current-menu-ancestor a, #main-menu ul li.menu-item-simple-parent ul li.current_page_item > a, #main-menu ul li.menu-item-simple-parent ul li.current_page_ancestor > a, #main-menu ul li.menu-item-simple-parent ul li.current-menu-item > a, #main-menu ul li.menu-item-simple-parent ul li.current-menu-ancestor > a { color:#507843; }
+
+.portfolio:hover .portfolio-detail p { color:#d2eb9d; }
+
+/*----*****---- << Background Color >> ----*****----*/
+
+.widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_product_tag_cloud a:hover, #secondary .widget h3.widgettitle span:before, #secondary h2.filtering span:before, #secondary .widget.woocommerce h3.widgettitle:hover a:before, .dt-sc-intro-text.type1 h4 span.dt-sc-highlight, .dt-sc-intro-text.type3, ul.products li .product-overlay a span, .sorting-container a:hover, .sorting-container a.active-sort, .property-pagination > span.current, .portfolio .image-overlay a span, .property-item .image-overlay a.zoom span, .property-item .image-overlay a.link span, .pagination ul li.active-page, .pagination ul.page-numbers li span.current, .pagination ul li a:hover, .pagination .next-post a:hover, .pagination .prev-post a:hover, .blog-entry .entry-thumb-meta .entry-meta, ul.commentlist li .reply a, ul.products li .product-thumb .onsale, .product .onsale, .carousel-arrows a:hover, .portfolio:hover .portfolio-detail, .side-nav-container ul li a:hover span, .side-nav-container ul li.current_page_item a span, #footer .widget.widget_tag_cloud .tagcloud a:hover, #footer .widget.widget_product_tag_cloud .tagcloud a:hover, .dt-sc-faq h5.dt-sc-toggle-accordion.active:before, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active, .dt-sc-toggle-frame h5.dt-sc-toggle.active, .ls-layer .dt-sc-button-text2 a, .ls-layer .dt-sc-button-text a, .ls-layer h4, .ui-widget-content, .tp-caption.cus_btn, .tp-caption.cus_small_green, .tp-caption.cus_big_green, .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content, .dt-sc-ico-content.type4:hover .icon span, .dt-sc-ico-content.type4:hover .dt-sc-button, .dt-sc-button, .property-item .property-thumb-meta .property-type, .dt-sc-agent-contact, .blog-entry .entry-thumb-meta .entry-meta, .featured-post, .dsidx-price, .dt-sc-ico-content.type3 .icon span, .dt-sc-ico-content.type1:hover .icon span, .property-search-container.type2 .property-search-title, .dt-sc-ico-content.type1 .icon span, .dt-sc-testimonial-wrapper .quovolve-nav .nav-numbers li.active a { background:#507843; }
+
+.dt-sc-ico-content.type4:hover .icon span { border-color:#cfe7bb; }
+.property-search-container.type2 .property-search-title:before { border-top-color:#507843; }
+
+.dt-sc-ico-content.type1:hover .icon span, .dt-sc-ico-content.type3:hover .icon span { box-shadow:inset 0px 0px 0px 4px #cee6b9; }
+.dt-sc-ico-content.type1:hover h5 span { background:#507843; }
+
+input[type=submit], button, input[type=button], .dt-sc-intro-text.type2 a, .dt-sc-intro-text.type4 a, .progress-striped .bar, .dt-sc-progress .bar, .dt-sc-pr-tb-col.selected .buy-now a, .portfolio-description a.dt-sc-button, ul.products li .details a.dt-sc-button, .price-range a.dt-sc-button, .woocommerce-message .dt-sc-button, .woocommerce-error .dt-sc-button, .woocommerce-info .dt-sc-button, .entry-thumb .bx-controls a.bx-prev:hover, .entry-thumb .bx-controls a.bx-next:hover,  .bx-controls-direction a.bx-prev:hover, .bx-controls-direction a.bx-next:hover, .entry-thumb .bx-controls a.bx-prev:hover, .entry-thumb .bx-controls a.bx-next:hover { background-color:#507843; }
+
+.featured-post:before, .sticky .featured-post:before { border-color: #507843 #507843 #507843 rgba(0, 0, 0, 0); }
+.entry-meta:after, .sticky .featured-post:after, .featured-post:after { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #507843; }
+
+.tp-caption.slider_button a { background-color:#507843 !important; }
+ul.products li .product-thumb .onsale, .product .onsale { background:rgba(122, 161, 39, 0.9); }
+
+.dt-sc-pr-tb-col.selected, .property-gallery-container #bx-pager a.active:before { border-color:#507843; }
+.dt-sc-pr-tb-col.selected .tb-header .price { background:#9bb95d; }
+
+/*----*****---- << Border >> ----*****----*/
+#main-menu > ul > li:hover, #main-menu > ul > li.current_page_item, #main-menu > ul > li.current-menu-ancestor, #main-menu > ul > li.current_page_item.hasSubmenu:hover, #main-menu > ul > li.current-menu-item { border-bottom:5px solid #507843; }
+#main-menu > ul > li:hover > ul:before { border-bottom:6px solid #507843; }
+ul.dt-sc-tabs-frame li a.current, .woocommerce-tabs ul.tabs li a.current { border-top:3px solid #507843; }
+#main-menu > ul > li > ul, .megamenu-child-container, .megamenu-child-container { border-top:5px solid #507843; }
+#main-menu > ul > li > ul > li > ul { border-left:5px solid #507843; border-top:0px; }
+#main-menu > ul > li > ul > li:hover ul:before { border-right:6px solid #507843; }
+.dt-sc-intro-text.type4, ul.dt-sc-tabs-vertical-frame li a.current { border-left:3px solid #507843; }
+.sorting-container a:hover, .sorting-container a.active-sort, .pagination ul li.active-page, .pagination ul.page-numbers li span.current, .pagination ul li a:hover, .pagination .next-post a:hover, .pagination .prev-post a:hover, .widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_product_tag_cloud a:hover { border-bottom:2px solid #6a901a; }
+.side-nav-container ul li a:hover, .side-nav-container ul li.current_page_item a { border-right:4px solid #507843; }
+#footer .widget.widget_tag_cloud .tagcloud a:hover, #footer .widget.widget_product_tag_cloud .tagcloud a:hover { border-bottom-color:#507843; }
+.portfolio:hover, .sorting-container a:hover, .sorting-container a.active-sort, .property-pagination > span.current, .property-pagination > span.current, .sorting-container a:hover, .sorting-container a.active-sort, .property-pagination > span.current { border-bottom-color:#6a901a; }
+ul.commentlist li .comment-author img:hover { border:5px solid #507843; }
+
+.dt-sc-pullquote5 { border-left:3px solid #507843; }
+.dt-sc-pullquote6 { border-top:3px solid #507843; }
+
+/*----*****---- << Background image >> ----*****----*/
+.portfolio-slider-container .bx-controls-direction a.bx-prev { background:url(images/portfolio-prev-arrow.png) no-repeat; }
+.portfolio-slider-container .bx-controls-direction a.bx-next { background:url(images/portfolio-next-arrow.png) no-repeat; }	

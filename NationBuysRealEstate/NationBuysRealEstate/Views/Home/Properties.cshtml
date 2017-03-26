@@ -165,7 +165,7 @@
             <div class='breadcrumb-wrapper'>
                 <div class="container">
                     <h1 class='page-title'>Properties</h1><div class="breadcrumb">
-                        <a href="http://wedesignthemes.com/themes/dt-realestate">Home</a><span class="fa default">  </span><h2>Properties</h2>
+                        <a href="/Home/Index">Home</a><span class="fa default">  </span><h2>Properties</h2>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
         <div id="main">
             <div id="main-container" class="container">
                 @{ var prop = Model.ToArray();
-                    var count = prop.Count();
+                    var count = prop.Length;
                 }
                 <section id="primary" class="content-full-width">
                     <div id="post-2265" class="post-2265 page type-page status-publish hentry">
@@ -185,20 +185,20 @@
                                 <div class="property-item">
 
                                     <div class="property-thumb ">
-                                        <ul class="porperty-slider"><li><a href='luxury-villa-in-rego-park/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
+                                        <ul class="porperty-slider"><li><a href='/Home/PropertyDetails/@prop[i].Id' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
 
                                         <div class="property-thumb-meta">
-                                            <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>@prop[i].Property_For</a></span><span class='property-type'><a href='../property_type/restaurant/index.html'>@prop[i].Property_type</a></span>
+                                            <span class="property-contract-type rent"><a href='#'>@prop[i].Property_For</a></span><span class='property-type'><a href='#'>@prop[i].Property_type</a></span>
                                         </div>
 
-                                        <a href="luxury-villa-in-rego-park/index.html">
+                                        <a href="/Home/PropertyDetails/@prop[i].Id">
                                             <div class="image-overlay"></div>
                                         </a>
 
                                     </div>
                                     <div class="property-details">
                                         <div class="property-details-inner">
-                                            <h2><a href='luxury-villa-in-rego-park/index.html'>@prop[i].Property_For</a></h2>
+                                            <h2><a href='/Home/PropertyDetails/@prop[i].Id'>@prop[i].Property_For</a></h2>
                                             <ul class="property-meta">
                                                 <li><span class="fa fa-certificate"></span>Area : @prop[i].Area</li>
                                                 <li><span class="bed"></span>Beds : @prop[i].Beds</li>
@@ -208,7 +208,7 @@
                                             </ul>
                                             <div class="property-content">
                                                 <span class="property-price">@prop[i].Price</span>
-                                                <a href="luxury-villa-in-rego-park/index.html" class="dt-sc-button small">View Details</a>
+                                                <a href="/Home/PropertyDetails/@prop[i].Id" class="dt-sc-button small">View Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -222,20 +222,20 @@
                                 <div class="property-item">
 
                                     <div class="property-thumb ">
-                                        <ul class="porperty-slider"><li><a href='luxury-villa-in-rego-park/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
+                                        <ul class="porperty-slider"><li><a href='/Home/PropertyDetails/@prop[i].Id' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
 
                                         <div class="property-thumb-meta">
-                                            <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>@prop[i].Property_For</a></span><span class='property-type'><a href='../property_type/restaurant/index.html'>@prop[i].Property_type</a></span>
+                                            <span class="property-contract-type rent"><a href='#'>@prop[i].Property_For</a></span><span class='property-type'><a href='#'>@prop[i].Property_type</a></span>
                                         </div>
 
-                                        <a href="luxury-villa-in-rego-park/index.html">
+                                        <a href="/Home/PropertyDetails/@prop[i].Id">
                                             <div class="image-overlay"></div>
                                         </a>
 
                                     </div>
                                     <div class="property-details">
                                         <div class="property-details-inner">
-                                            <h2><a href='luxury-villa-in-rego-park/index.html'>@prop[i].Property_For</a></h2>
+                                            <h2><a href='/Home/PropertyDetails/@prop[i].Id'>@prop[i].Property_For</a></h2>
                                             <ul class="property-meta">
                                                 <li><span class="fa fa-certificate"></span>Area : @prop[i].Area</li>
                                                 <li><span class="bed"></span>Beds : @prop[i].Beds</li>
@@ -245,7 +245,7 @@
                                             </ul>
                                             <div class="property-content">
                                                 <span class="property-price">@prop[i].Price</span>
-                                                <a href="luxury-villa-in-rego-park/index.html" class="dt-sc-button small">View Details</a>
+                                                <a href="/Home/PropertyDetails/@prop[i].Id" class="dt-sc-button small">View Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -262,20 +262,20 @@
                                 <div class="property-item">
 
                                     <div class="property-thumb ">
-                                        <ul class="porperty-slider"><li><a href='luxury-villa-in-rego-park/index.html' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
+                                        <ul class="porperty-slider"><li><a href='/Home/PropertyDetails/@prop[i].Id' class='link'><img src='~/wp-content/uploads/2014/04/property1-338x229.jpg' width='338' height='229' title='Luxury Villa In Rego Park' alt='Luxury Villa In Rego Park' /></a></li></ul>
 
                                         <div class="property-thumb-meta">
-                                            <span class="property-contract-type rent"><a href='../contract_type/rent/index.html'>@prop[i].Property_For</a></span><span class='property-type'><a href='../property_type/restaurant/index.html'>@prop[i].Property_type</a></span>
+                                            <span class="property-contract-type rent"><a href='#'>@prop[i].Property_For</a></span><span class='property-type'><a href='#'>@prop[i].Property_type</a></span>
                                         </div>
 
-                                        <a href="luxury-villa-in-rego-park/index.html">
+                                        <a href="/Home/PropertyDetails/@prop[i].Id">
                                             <div class="image-overlay"></div>
                                         </a>
 
                                     </div>
                                     <div class="property-details">
                                         <div class="property-details-inner">
-                                            <h2><a href='luxury-villa-in-rego-park/index.html'>@prop[i].Property_For</a></h2>
+                                            <h2><a href='/Home/PropertyDetails/@prop[i].Id'>@prop[i].Property_For</a></h2>
                                             <ul class="property-meta">
                                                 <li><span class="fa fa-certificate"></span>Area : @prop[i].Area</li>
                                                 <li><span class="bed"></span>Beds : @prop[i].Beds</li>
@@ -285,7 +285,7 @@
                                             </ul>
                                             <div class="property-content">
                                                 <span class="property-price">@prop[i].Price</span>
-                                                <a href="luxury-villa-in-rego-park/index.html" class="dt-sc-button small">View Details</a>
+                                                <a href="/Home/PropertyDetails/@prop[i].Id" class="dt-sc-button small">View Details</a>
                                             </div>
                                         </div>
                                     </div>

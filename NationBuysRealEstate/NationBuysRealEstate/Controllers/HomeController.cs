@@ -14,9 +14,7 @@ namespace RealEstateUpdate2.Controllers
 {
     public class HomeController : Controller
     {
-        // RealEstateEntities1 Entities = new RealEstateEntities1();
-        // GET: Home
-        NationBuysRealEsateEntities obj = new NationBuysRealEsateEntities();
+        NationBuysRealEstateEntities obj = new NationBuysRealEstateEntities();
         public ActionResult Index()
         {
             return View();
@@ -192,7 +190,7 @@ namespace RealEstateUpdate2.Controllers
             }
             if (Request["Area"] != "Any" && Request["Area"] != null)
             {
-                temp = list.Where(p => int.Parse(p.Property.Area) == int.Parse(Request["Area"])).ToList();
+                temp = list.Where(p => p.Property.Area == int.Parse(Request["Area"])).ToList();
                 if (temp != null && temp.Count != 0)
                 {
                     list = temp;

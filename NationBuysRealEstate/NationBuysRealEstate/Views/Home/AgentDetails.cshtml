@@ -1,6 +1,4 @@
-﻿@model IEnumerable<NationBuysRealEstate.User>
-
-@{
+﻿@{
     Layout = null;
 }
 
@@ -20,14 +18,7 @@
     <meta charset="UTF-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
     @{
-        if (Model != null)
-        {
-            <title> | @Model.First().Name </title>
-        }
-        else
-        {
-            <title> | No Details </title>
-        }
+            <title> | @Model.Name </title>
     }
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="../../xmlrpc.php" />
@@ -181,7 +172,7 @@
             <div class='breadcrumb-wrapper'>
                 <div class="container">
                     <h1 class='page-title'></h1><div class="breadcrumb">
-                        <a href="http://wedesignthemes.com/themes/dt-realestate">Home</a><span class="fa default">  </span><h2>Agent Details</h2>
+                        <a href="/Home/Index">Home</a><span class="fa default">  </span><h2>Agent Details</h2>
                     </div>
                 </div>
             </div>
@@ -199,9 +190,9 @@
                                         <img width="400" height="420" src="../../wp-content/uploads/2014/04/agent11.jpg" class="attachment-full size-full wp-post-image" alt="agent11" srcset="http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11.jpg 400w, http://wedesignthemes.com/themes/dt-realestate/wp-content/uploads/2014/04/agent11-286x300.jpg 286w" sizes="(max-width: 400px) 100vw, 400px" />
                                     </div>
                                     <div class="dt-sc-agent-details">
-                                        <h4>@Model.First().Name</h4>
+                                        <h4>@Model.Name</h4>
                                         <div class="dt-sc-agent-contact">
-                                            <p> <span class="fa fa-mobile"> </span> @Model.First().OfficeNumber </p><p> <span class="fa fa-phone"> </span> @Model.First().Phone </p><p> <span class="fa fa-envelope"> </span> <a href="mailto:name@someemail.com">@Model.First().Email</a></p>
+                                            <p> <span class="fa fa-mobile"> </span> @Model.OfficeNumber </p><p> <span class="fa fa-phone"> </span> @Model.Phone </p><p> <span class="fa fa-envelope"> </span> <a href="mailto:name@someemail.com">@Model.Email</a></p>
 
                                             <ul class="dt-sc-social-icons"><li class='tumblr'><a href='#'><span class='fa fa-tumblr' /></a></li><li class='facebook'><a href='#'><span class='fa fa-facebook' /></a></li><li class='twitter'><a href='#'><span class='fa fa-twitter' /></a></li><li class='youtube'><a href='#'><span class='fa fa-youtube' /></a></li></ul>
                                         </div>

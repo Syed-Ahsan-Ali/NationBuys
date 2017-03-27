@@ -1,0 +1,375 @@
+﻿
+@{
+    ViewBag.Title = "TermAndConditions";
+}
+
+
+
+@model IEnumerable<NationBuysRealEstate.Property>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<!-- Mirrored from wedesignthemes.com/themes/dt-realestate/dt_properties/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Feb 2017 16:34:45 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+    <title> | Properties</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="../xmlrpc.php" />
+
+    <script type='text/javascript'>
+	var mytheme_urls = {
+		 theme_base_url:'~/wp-content/themes/realestate/'
+ 		, framework_base_url: '~/wp-content/themes/realestate/framework/'
+ 		,ajaxurl:'http://wedesignthemes.com/themes/dt-realestate/wp-admin/admin-ajax.php'
+ 		,url:'http://wedesignthemes.com/themes/dt-realestate'
+ 		,stickynav:'enable'
+ 		,scroll:'enable'
+ 		,isRTL:''
+	};
+    </script>
+    <link href='~/wp-content/themes/realestate/images/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='~/wp-content/themes/realestate/images/apple-touch-icon.html' rel='apple-touch-icon-precomposed' />
+    <link href='~/wp-content/themes/realestate/images/apple-touch-icon-114x114.html' sizes='114x114' rel='apple-touch-icon-precomposed' />
+    <link href='~/wp-content/themes/realestate/images/apple-touch-icon-72x72.html' sizes='72x72' rel='apple-touch-icon-precomposed' />
+    <link href='~/wp-content/themes/realestate/images/apple-touch-icon-144x144.html' sizes='114x114' rel='apple-touch-icon-precomposed' />
+    <link rel="alternate" type="application/rss+xml" title="RealEstate &raquo; Feed" href="../feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="RealEstate &raquo; Comments Feed" href="../comments/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="RealEstate &raquo; Properties Feed" href="feed/index.html" />
+    <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+
+    @*<link href="~/Content/PrivacyPolicy/style1.css" rel="stylesheet" />*@
+    <link rel='stylesheet' id='dt-sc-css-css' href='~/wp-content/plugins/designthemes-core-features/shortcodes/css/shortcodes62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dt-sc-tip1-css' href='~/wp-content/plugins/designthemes-core-features/shortcodes/js/tooltip/tooltipster62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dt-sc-tip2-css' href='~/wp-content/plugins/designthemes-core-features/shortcodes/js/tooltip/themes/tooltipster-shadow62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dt-sc-colorboxcss-css' href='~/wp-content/plugins/designthemes-core-features/shortcodes/css/colorbox62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dt-animations-css' href='~/wp-content/plugins/designthemes-core-features/page-builder/css/animations62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidx-css' href='http://cdn1.diverse-cdn.com/api/combo-css/config=dsidxpress.css/b3f2e8' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxpress-icons-css' href='~/wp-content/plugins/dsidxpress/css/dsidx-icons62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxpress-unconditional-css' href='~/wp-content/plugins/dsidxpress/css/client62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxwidgets-unconditional-css' href='~/wp-content/plugins/dsidxpress/dsidxwidgets/css/client62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='~/wp-content/plugins/contact-form-7/includes/css/stylesc1f9.css?ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='resmap_css-css' href='~/wp-content/plugins/responsive-maps-plugin/includes/css/resmap.mine735.css?ver=3.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href='~/wp-content/plugins/revslider/public/assets/css/settings5223.css?ver=5.2.6' type='text/css' media='all' />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+        #rs-demo-id {
+        }
+    </style>
+    <link rel='stylesheet' id='prettyphoto-css' href='~/wp-content/themes/realestate/css/prettyPhoto62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='default-css' href='~/wp-content/themes/realestate/style62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='skin-css' href='~/wp-content/themes/realestate/skins/green/style62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-font-awesome-css' href='../../../../netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.minbfce.css?ver=4.1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-css' href='~/wp-content/themes/realestate/css/responsive62d0.css?ver=4.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='mytheme-google-fonts-css' href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700|Arvo:400,700&amp;subset' type='text/css' media='all' />
+    <link rel='stylesheet' id='ws-plugin--s2member-css' href='~/wp-content/plugins/s2member/s2member-ob29a.css?ws_plugin__s2member_css=1&amp;qcABC=1&amp;ver=160503-2358678001' type='text/css' media='all' />
+    <!--[if IE]>
+       <style type="text/css" media="screen">
+               .dt-sc-ico-content.type1 .icon span, .product-overlay a, .product-overlay a span, h5.faq:before, .carousel-arrows a, .testimonial .author img, .testimonial .author, #secondary .widget h3.widgettitle a:before, .portfolio .image-overlay a, .portfolio .image-overlay a span, .dt-sc-team .dt-sc-social-icons li {
+                   behavior: url(~/wp-content/themes/realestate/PIE.php);
+                  }
+        </style>
+        <![endif]-->
+    <script type='text/javascript' src='~/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='~/wp-includes/js/plupload/plupload.full.mincc91.js?ver=2.1.8'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var dsidxAjaxHandler = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='http://cdn1.diverse-cdn.com/api/combo-js/config=dsidxpress.js/d4c7fb?ver=2.1.40'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min5223.js?ver=5.2.6'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min5223.js?ver=5.2.6'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/modernizr-2.6.2.min62d0.js?ver=4.5.3'></script>
+    <style type="text/css">
+        #myCSS h2,h5{
+            color: orange;
+        }
+
+        nav#main-menu ul li a, .mobile-menu {
+            font-family: Lato,sans-serif;
+        }
+
+        body {
+            font-family: Lato, sans-serif;
+        }
+
+        H1 {
+            font-family: Lato;
+        }
+
+        H2 {
+            font-family: Lato;
+        }
+
+        H3 {
+            font-family: Lato;
+        }
+
+        H4 {
+            font-family: Lato;
+        }
+
+        H5 {
+            font-family: Lato;
+        }
+
+        H6 {
+            font-family: Lato;
+        }
+    </style>
+    <link rel='https://api.w.org/' href='../wp-json/index.html' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.5.3" />
+    <meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+				if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+				localdsidx.pluginUrl = "~/wp-content/plugins/dsidxpress/index.html";
+				localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
+    </script>
+    <script type="text/javascript">
+				if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+				localdsidx.pluginUrl = "~/wp-content/plugins/dsidxpress/index.html";
+				localdsidx.homeUrl = "http://wedesignthemes.com/themes/dt-realestate";
+    </script>
+</head>
+<body class="archive post-type-archive post-type-archive-dt_properties">
+    <!-- **Property Style Picker Wrapper** --><div class="property-style-picker-wrapper">	<a href="#" title="" class="style-picker-ico"> <img src="~/wp-content/themes/realestate/images/style-picker/picker-icon.png" alt="" title="" /> </a>	<div id="property-style-picker">   	<h2>Select Your Style</h2>       <h3>Choose your layout</h3>		<ul class="layout-picker">       	<li> <a id="fullwidth" href="#" title="" class="selected"> <img src="~/wp-content/themes/realestate/images/style-picker/fullwidth.jpg" alt="" title="" width="71" height="49" /> </a> </li>       	<li> <a id="boxed" href="#" title=""> <img src="~/wp-content/themes/realestate/images/style-picker/boxed.jpg" alt="" title="" width="71" height="49" /> </a> </li>		</ul>		<div class="hr"> </div>		<div id="pattern-holder" style="display:none;">			<h3>Patterns for Boxed Layout</h3>			<ul class="pattern-picker"><li><a id='pattern9' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern9.jpg' alt='pattern9' title='pattern9' width='30' height='30' /></a></li><li><a id='pattern3' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern3.jpg' alt='pattern3' title='pattern3' width='30' height='30' /></a></li><li><a id='pattern4' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern4.jpg' alt='pattern4' title='pattern4' width='30' height='30' /></a></li><li><a id='pattern8' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern8.jpg' alt='pattern8' title='pattern8' width='30' height='30' /></a></li><li><a id='pattern14' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern14.jpg' alt='pattern14' title='pattern14' width='30' height='30' /></a></li><li><a id='pattern7' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern7.jpg' alt='pattern7' title='pattern7' width='30' height='30' /></a></li><li><a id='pattern10' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern10.jpg' alt='pattern10' title='pattern10' width='30' height='30' /></a></li><li><a id='pattern1' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern1.jpg' alt='pattern1' title='pattern1' width='30' height='30' /></a></li><li><a id='pattern12' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern12.jpg' alt='pattern12' title='pattern12' width='30' height='30' /></a></li><li><a id='pattern5' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern5.jpg' alt='pattern5' title='pattern5' width='30' height='30' /></a></li><li><a id='pattern15' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern15.jpg' alt='pattern15' title='pattern15' width='30' height='30' /></a></li><li><a id='pattern13' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern13.jpg' alt='pattern13' title='pattern13' width='30' height='30' /></a></li><li><a id='pattern11' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern11.jpg' alt='pattern11' title='pattern11' width='30' height='30' /></a></li><li><a id='pattern6' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern6.jpg' alt='pattern6' title='pattern6' width='30' height='30' /></a></li><li><a id='pattern2' href='#' title=''><img src='~/wp-content/themes/realestate/images/style-picker/patterns/pattern2.jpg' alt='pattern2' title='pattern2' width='30' height='30' /></a></li>			</ul>			<div class="hr"> </div>		</div>		<h3>Color scheme</h3>		<ul class="color-picker"><li><a id="blue" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/blue.jpg" alt="color-blue" title="color-blue" width="30" height="30" /></a></li><li><a id="chocolate" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/chocolate.jpg" alt="color-chocolate" title="color-chocolate" width="30" height="30" /></a></li><li><a id="coral" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/coral.jpg" alt="color-coral" title="color-coral" width="30" height="30" /></a></li><li><a id="cyan" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/cyan.jpg" alt="color-cyan" title="color-cyan" width="30" height="30" /></a></li><li><a id="eggplant" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/eggplant.jpg" alt="color-eggplant" title="color-eggplant" width="30" height="30" /></a></li><li><a id="electricblue" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/electricblue.jpg" alt="color-electricblue" title="color-electricblue" width="30" height="30" /></a></li><li><a id="ferngreen" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/ferngreen.jpg" alt="color-ferngreen" title="color-ferngreen" width="30" height="30" /></a></li><li><a id="gold" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/gold.jpg" alt="color-gold" title="color-gold" width="30" height="30" /></a></li><li><a id="green" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/green.jpg" alt="color-green" title="color-green" width="30" height="30" /></a></li><li><a id="grey" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/grey.jpg" alt="color-grey" title="color-grey" width="30" height="30" /></a></li><li><a id="khaki" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/khaki.jpg" alt="color-khaki" title="color-khaki" width="30" height="30" /></a></li><li><a id="ocean" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/ocean.jpg" alt="color-ocean" title="color-ocean" width="30" height="30" /></a></li><li><a id="orange" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/orange.jpg" alt="color-orange" title="color-orange" width="30" height="30" /></a></li><li><a id="palebrown" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/palebrown.jpg" alt="color-palebrown" title="color-palebrown" width="30" height="30" /></a></li><li><a id="pink" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/pink.jpg" alt="color-pink" title="color-pink" width="30" height="30" /></a></li><li><a id="purple" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/purple.jpg" alt="color-purple" title="color-purple" width="30" height="30" /></a></li><li><a id="raspberry" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/raspberry.jpg" alt="color-raspberry" title="color-raspberry" width="30" height="30" /></a></li><li><a id="red" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/red.jpg" alt="color-red" title="color-red" width="30" height="30" /></a></li><li><a id="skyblue" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/skyblue.jpg" alt="color-skyblue" title="color-skyblue" width="30" height="30" /></a></li><li><a id="slateblue" href="#" title=""><img src="~/wp-content/themes/realestate/images/style-picker/slateblue.jpg" alt="color-slateblue" title="color-slateblue" width="30" height="30" /></a></li>		</ul>	</div></div><!-- **Property Style Picker Wrapper - End** -->
+    <!-- **Wrapper** -->
+    <div class="wrapper">
+
+
+        <div id="header-wrapper">
+            <!-- **Header** -->
+            @{Html.RenderPartial("~/Views/Home/_Header.cshtml");}<!-- **Header - End** -->
+        </div><!-- Header Wrapper -->
+        <!-- **Main** -->
+        <!--<div id="main">-->
+        <!-- ** Title Fullwidth Background ** --><section class='breadcrumb-section no-image page-archive'>
+            <div class='breadcrumb-wrapper'>
+                <div class="container">
+                    <h1 class='page-title'>Privacy Policy</h1><div class="breadcrumb">
+                        <a href="http://wedesignthemes.com/themes/dt-realestate">Home</a><span class="fa default">  </span><h2>Privacy Policy</h2>
+                    </div>
+                </div>
+            </div>
+        </section><!-- ** Title Fullwidth Background End ** -->
+
+
+
+        <div>
+            <div class="container" id="myCSS">
+                <div class='breadcrumb-wrapper'>
+
+
+
+
+                    <h2 class="page-title">Our Privacy Policy</h2>
+                
+                <p>
+                    Because we value your patronage, we want to address any privacy concerns you may
+                    have. To that end, we have set forth our privacy policy for handling the information
+                    you share with us online. We want your decision to do business with us to be an
+                    informed one.
+                </p>
+                    
+                <ol>
+                    <li>
+                        <h5 class="page-title">Collecting Information</h5>
+                        <p>
+                            When you visit our Website, we may collect information about you that you voluntarily
+                            choose to share with us. This identification information may include, but is not
+                            limited to, your name, your physical address, your e­mail address, your telephone
+                            and fax numbers, details of your real estate and lending needs and preferences,
+                            and other details of your life.
+                        </p>
+                        <p>
+                            What may be less obvious to you is that, when you visit our Website, we may collect
+                            data involving your usage through the use of “cookies” (i.e. small text files placed
+                            on your computer by a Website), Web server logs, and other Web tools. This technology
+                            allows us to customize your online experience, as well as track your Internet use.
+                            The tracking data we collect may include, but is not limited to, the date and time
+                            you visit, the time you spend, the Web pages you view, the other Websites you visit,
+                            your search queries, and basic information about your computer, such as your Internet
+                            Protocol (“IP”) address, your domain name, your browser type, and the name of your
+                            Internet service provider. You may deactivate cookies if you do not want your browsing
+                            to be tracked, but doing so may hinder your online experience.
+                        </p>
+                        <p>
+                            When visiting our Website, you may be directed, through hyperlinks, to other Websites
+                            that are beyond our control. Furthermore, when you are visiting our Website, other
+                            companies, such as third party advertisers and sponsors, may be gathering information
+                            about you. This Privacy Policy does not cover the collection of information by those
+                            other companies and Websites. Although we encourage third parties to provide their
+                            own privacy policies, we are not responsible for their activities, such as how they
+                            handle the information they collect online.
+                        </p>
+                    </li>
+                    <li>
+                        <h5 class="page-title">Using Information Collected</h5>
+                        <p>
+                            We primarily use the identification information you voluntarily share with us to
+                            customize your online experience and to do what you have asked of us. We also use
+                            your identification information to tell you about our products and services, but
+                            you may instruct us not to send communications to you by following the procedure
+                            indicated below under “Contacting Us.” On occasion, we use your identification information
+                            to validate your identity. As for usage tracking data, we primarily use that information
+                            to operate and improve our Website, and to further our marketing efforts.
+                        </p>
+                        <p>
+                            As a general rule, we do not share your information with unaffiliated third parties.
+                            We may, however, share your information with our own personnel and our service providers
+                            to the extent necessary to fulfill your requests. We may also share your information
+                            with our affiliates, but we will not share it with unaffiliated third parties for
+                            direct marketing purposes. We reserve the right to disclose your information under
+                            limited circumstances, such as to cooperate with law enforcement or judicial authorities
+                            as required by law or legal process, to protect our own legal rights, or to protect
+                            the public good.
+                        </p>
+                        <p>
+                            Whenever you are online, you run the risk that the information you give out will
+                            fall into the wrong hands. Although we implement and maintain reasonable security
+                            procedures and practices to safeguard your privacy, we cannot guarantee the security
+                            of any information you provide to us. We accept no responsibility or liability for
+                            the activities of third parties.
+                        </p>
+                    </li>
+                    <li>
+                        <h5 class="page-title">Updating Information</h5>
+                        <p>
+                            If you would like to review the information about you that we have collected through
+                            our Website, or to change that information, you can make that request by following
+                            the procedure indicated below under “Contacting Us.” We may require that you verify
+                            your identity before we process your request.
+                        </p>
+                    </li>
+                    <li>
+                        <h5 class="page-title">Updating Our Privacy Policy</h5>
+                        <p>
+                            We may, from time to time, change our Privacy Policy. We will notify you of any
+                            changes by posting our updated Privacy Policy on our Website and inserting a new
+                            “Effective Date.”
+                        </p>
+                    </li>
+                    <li>
+                        <h5 class="page-title">Contacting Us</h5>
+                        <p>
+                            If you would like to send us a request as indicated above, or if you have any other
+                            questions or concerns regarding our Privacy Policy, you may contact us by e­mail
+                            at <a href="mailto:customerservice@huntrealestate.com">
+                                customerservice@huntrealestate.com
+                            </a> or call us at
+                            (716) 880-1303.
+                        </p>
+                    </li>
+                    <li>
+                        <h5 class="page-title">Effective Date:</h5>
+                        <p>
+                            This Privacy Policy is effective as of January 1, 2010.
+                        </p>
+                    </li>
+                </ol>
+                    </div>
+            </div>
+            </div>
+
+
+
+        <!--</div>--><!-- **Main - End** -->
+        <!-- **Footer** -->
+        @{Html.RenderPartial("_Footer");}<!-- **Footer - End** -->
+    </div><!-- **Wrapper - End** -->
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.inview62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.tabs.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.donutchart62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/countTo62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.tipTip.minified62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.viewport62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.carouFredSel-6.2.1-packed62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.cycle.all62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.quovolver.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/jquery.colorbox62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var dt_plupload = {"ajaxurl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php","plupload":{"browse_button":"dt-frontend-uploader","file_data_name":"wpuf_featured_img","max_file_size":"134217728b","url":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-admin\/admin-ajax.php?action=wpuf_featured_img","multipart":true,"urlstream_upload":true}};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/shortcodes62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/shortcodes/js/tooltip/jquery.tooltipster.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/page-builder/js/jquery.inview62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/designthemes-core-features/page-builder/js/custom-public62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/dsidxpress/dsidxwidgets/js/widget-service-admin62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/dsidxpress/js/widget-search5a0d.js?ver=2.1.40'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/dsidxpress/js/widget-list-areas5a0d.js?ver=2.1.40'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/dsidxpress/js/widget-listings5a0d.js?ver=2.1.40'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/wedesignthemes.com\/themes\/dt-realestate\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='~/wp-content/plugins/contact-form-7/includes/js/scriptsc1f9.js?ver=4.4.2'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/easing62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/retina62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.nicescroll.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.ui.totop.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.sticky62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.isotope.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.prettyPhoto62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.fitvids62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.bxslider62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.cookie62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/picker62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.smartresize62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/jquery.mobilemenu62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/themes/realestate/framework/js/public/custom62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/s2member/s2member-o70ef.js?ws_plugin__s2member_js_w_globals=1&amp;qcABC=1&amp;ver=160503-2358678001'></script>
+    <script type='text/javascript' src='~/wp-includes/js/wp-embed.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/ui/menu.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/wp-includes/js/wp-a11y.min62d0.js?ver=4.5.3'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='~/wp-includes/js/jquery/ui/autocomplete.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/wp-content/plugins/dsidxpress/js/autocomplete5a0d.js?ver=2.1.40'></script>
+</body>
+
+<!-- Mirrored from wedesignthemes.com/themes/dt-realestate/dt_properties/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Feb 2017 16:34:49 GMT -->
+</html>
+
+
+

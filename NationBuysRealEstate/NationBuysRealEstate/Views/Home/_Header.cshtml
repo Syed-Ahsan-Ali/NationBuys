@@ -15,6 +15,7 @@
                 <ul class="user-account">
                     @if (Request.IsAuthenticated)
                     {
+                       
                         using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logOut-Form" }))
                         {
                             @Html.AntiForgeryToken()
@@ -24,6 +25,8 @@
                     else
                     {
                         <li><a class="fa fa-user" href="@Url.Action("Login", "Account")">Login</a></li>
+                        <li><a class="fa fa-user" href="@Url.Action("Register", "Account")">Register</a></li>
+
                     }
                 </ul >
                 <span class="fa fa-phone-square"> </span> 1 (800) 567 8765
@@ -35,7 +38,7 @@
     <div class="container">
         <!-- **Logo - End** -->
         <div id = "logo" >
-            <a href="http://wedesignthemes.com/themes/dt-realestate" title="RealEstate">
+            <a href="http://localhost:54192/Home/Index" title="RealEstate">
                 <img class="normal_logo" src="~/wp-content/themes/realestate/images/logo.png" alt="RealEstate" title="RealEstate" id="dt_logo" />
                 <img class="retina_logo" src="~/wp-content/themes/realestate/images/logo%402x.png" alt="RealEstate" title="RealEstate" style="width:98px; height:99px;" id="dt_retina_logo" />
             </a>
@@ -45,8 +48,18 @@
             <nav id="main-menu">
                 <ul id = "menu-header-menu" class="menu">
                     <li id = "menu-item-2375" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2345 current_page_item menu-item-has-children menu-item-depth-0 menu-item-simple-parent ">
-                        <a href = "/Home/index" > Home </ a ><span class="arrow"> </span>
+                        @if (Request.IsAuthenticated)
+                        {
+                            
+                        <a href = "~/Account/Index" > Admin Home<span class="arrow"> </span></a>
 
+                        }
+                        else
+                        {
+                            <a href="~/Home/Index"> Home<span class="arrow"> </span></a>
+
+                         
+                        }
                         @*<ul class="sub-menu">
                                 <li id="menu-item-2460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1"><a href="home-layout-2/index.html">Home Layout 2</a></li>
                                 <li id="menu-item-2621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1"><a href="home-layout-3/index.html">Home Layout 3</a></li>
@@ -113,6 +126,7 @@
                         <a href="#">Pages</a><span class="arrow"> </span>
 
                         <ul class="sub-menu">
+
                             <li id="menu-item-2578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1"><a href="/Home/AboutUs">About Us</a></li>
                             @*<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
                                     <a href="header-type-1/index.html">Header Types</a>

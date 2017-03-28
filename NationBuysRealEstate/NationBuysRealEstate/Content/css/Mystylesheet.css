@@ -1,0 +1,112 @@
+﻿body {
+}
+
+/*////////////////////////////////////////CSSS form LOGIN PAGE/////////////////////////////*/
+
+
+.Remember
+{
+    margin-left:0px;
+}
+.Social
+{
+    margin-bottom: 3px;
+}
+
+.alignment
+{
+    margin-left:20%;
+}
+
+.login_main
+{
+    margin-top:10%;
+   margin-left:10%;
+    padding:2%;
+    width:70%;
+    background:	#E4E9E9;
+    border-radius:10px;
+    margin-bottom:10%;
+
+}
+/*/////////////////////////////////CSS form eXTERNAL LOGIN PARTIAL PAGE///////////////////////////////////////*/
+.heading{
+    margin-top:20%;
+}
+
+
+/*/////////////////////////////////CSS form eXTERNAL Register User Page///////////////////////////////////////*/
+.Register_main
+{
+    
+   margin-left:15%;
+   padding:2%;
+  
+    width:70%;
+    background:	#E4E9E9;
+    border-radius:10px;
+    margin-bottom:5%;
+   
+  
+
+}
+
+    
+     .Register_main input[type=text]{
+   border-radius:10px;
+   margin-top:5px;
+   margin-left:13%;
+   
+    }
+     .Register_main input[type=password]{
+   border-radius:10px;
+   margin-top:5px;
+    margin-left:13%;
+    }
+
+
+
+    .Register_main input[type=submit] {
+        margin-left: 13%;
+        margin-top: 2%;
+        border-radius: 10px;
+        
+    }
+
+
+    /*/////////////////////////////////CSS For Forgot Password Page///////////////////////////////////////*/
+ .forgotPassword
+{
+    margin-top: 2%;
+    margin-left: 14%;
+    padding:2%;
+    width:70%;
+    
+    background:	white;
+    border-radius: 42px;
+    margin-bottom: 5%;
+    height:28%;
+}
+  .forgotPassword input[type=submit]
+  {
+      margin-top:10px;
+      margin-left:15%;
+  }
+
+  .test{
+    height:200px;
+    width:200px;
+}
+
+   /*/////////////////////////////////CSS For Forgot Password Confirmation///////////////////////////////////////*/
+   .confirmPasswordReset
+   {
+        margin-top:5%;
+   margin-left:15%;
+    padding:2%;
+    width:70%;
+    background:	#E4E9E9;
+    border-radius:10px;
+    margin-bottom:5%;
+
+   }

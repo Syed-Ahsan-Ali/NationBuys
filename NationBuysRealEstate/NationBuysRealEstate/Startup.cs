@@ -7,6 +7,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security.Google;
+using Microsoft.AspNet.SignalR;
 
 [assembly: OwinStartup(typeof(NationBuysRealEstate.Startup))]
 

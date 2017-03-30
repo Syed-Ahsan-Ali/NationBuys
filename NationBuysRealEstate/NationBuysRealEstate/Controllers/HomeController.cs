@@ -246,7 +246,23 @@ namespace RealEstateUpdate2.Controllers
 
             return View();
         }
+        public ActionResult GetMessages()
+        {
+            NationBuysRealEstate.Models.MessagesRepository _messageRepository = new NationBuysRealEstate.Models.MessagesRepository();
+            return PartialView("_MessagesList", _messageRepository.GetAllMessages());
+        }
 
-
+        public ActionResult Message()
+        {
+            return View();
+        }
+        public ActionResult Notification()
+        {
+            return View();
     }
+
+
+
+
+}
 }

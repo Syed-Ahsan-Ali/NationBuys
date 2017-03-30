@@ -1,0 +1,59 @@
+﻿@model NationBuysRealEstate.FileRate
+
+@{
+    ViewBag.Title = "EditFileRate";
+    Layout = null;
+}
+<button type="button" class="btn btn-sm btn-default pull-right" data-dismiss="modal">X</button>
+<h2>EditFileRate</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="FileRates_Image">FileRates</label>
+            @*@Html.LabelFor(model => model.FileRates_Image, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                <label class="btn btn-file btn-primary" for="file3">
+                    <input type="file" name="image" id="file3" style="display:block;" accept="image/*" onchange="loadFile3(event)" />
+                    Choose Image
+                </label>
+                @*@Html.EditorFor(model => model.FileRates_Image, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.FileRates_Image, "", new { @class = "text-danger" })
+            </div>
+            <div class="thumbnail col-md-offset-3 col-md-7" style="margin-top:2%">
+                <a href="#">
+                    <label id="text3"></label>
+                    <img id="output3" src=@Url.Content(Model.FileRates_Image) />
+                </a>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-info btn-md" />
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    var loadFile3 = function (event) {
+        var reader = new FileReader();
+        debugger;
+        reader.onload = function () {
+            var output = document.getElementById('output3');
+            var output1 = document.getElementById('text3');
+            output1.innerText = document.getElementById('file3').files[0].name;
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+</script>

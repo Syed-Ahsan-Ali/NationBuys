@@ -1,0 +1,86 @@
+﻿@model IEnumerable<NationBuysRealEstate.Blog>
+
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container">
+    <h2>Blog</h2>
+
+    <p>
+        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal0">Add New Blog</button>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Post_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Media_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Media_Source)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Post_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Media_Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Media_Source)
+                </td>
+                <td>
+
+                    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal_@item.Id">Update</button>
+                    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal1_@item.Id">Delete</button>
+                    <div id="myModal_@item.Id" class="modal" role="dialog">
+                        <div class="modal-dialog" >
+                            <div class="modal-content" style="margin-top:100px">
+                                <div class="modal-body">
+                                    @Html.Action("EditBlog", "Admin", new { id = item.Id })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal1_@item.Id" class="modal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="margin-top:100px">
+                                <div class="modal-body">
+                                    @Html.Action("DeleteBlog", "Admin", new { id = item.Id })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal0" class="modal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content"   style="margin-top:100px">
+                                <div class="modal-body">
+                                    @Html.Action("AddBlog", "Admin", new { id = item.Id })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

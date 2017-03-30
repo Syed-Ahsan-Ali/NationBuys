@@ -14,10 +14,10 @@ namespace RealEstateUpdate2.Controllers
 {
     public class HomeController : Controller
     {
-        NationBuysRealEstateEntities obj = new NationBuysRealEstateEntities();
+        NationBuysRealEsateEntities obj = new NationBuysRealEsateEntities();
         public ActionResult Index()
         {
-            return View();
+            return View(); 
         }
 
         public ActionResult Properties()
@@ -83,7 +83,7 @@ namespace RealEstateUpdate2.Controllers
             {
                 details.Property.Amenities = "default";
             }
-            details.Users= obj.Users.Where(p => p.Id == id).FirstOrDefault();
+            details.Users= obj.AspNetUsers.Where(p => p.Id == details.Property.User_id).FirstOrDefault();
             details.Room= obj.Rooms.Where(p => p.Id == id).FirstOrDefault();
             details.Address= obj.Addresses.Where(p => p.Id == id).FirstOrDefault();
             return View(details);
@@ -95,11 +95,11 @@ namespace RealEstateUpdate2.Controllers
         }
         public ActionResult Agent()
         {
-            return View(obj.Users.ToList().Where(p => p.User_Type == "Agent" || p.User_Type == "Admin"));
+            return View();/*obj.AspNetUsers.ToList().Where(p => p.User_Type == "Agent" || p.User_Type == "Admin"));*/
         }
-        public ActionResult AgentDetails(int id)
+        public ActionResult AgentDetails(string id)
         {
-                return View(obj.Users.ToList().Where(p => p.Id == id).First());
+                return View(obj.AspNetUsers.ToList().Where(p => p.Id == id).First());
         }
         public ActionResult Agencies()
         {
@@ -190,7 +190,7 @@ namespace RealEstateUpdate2.Controllers
             }
             if (Request["Area"] != "Any" && Request["Area"] != null)
             {
-                temp = list.Where(p => p.Property.Area == int.Parse(Request["Area"])).ToList();
+               // temp = list.Where(p => p.Property.Area == int.Parse(Request["Area"])).ToList();
                 if (temp != null && temp.Count != 0)
                 {
                     list = temp;

@@ -14,10 +14,21 @@ namespace RealEstateUpdate2.Controllers
 {
     public class HomeController : Controller
     {
-        NationBuysRealEsateEntities obj = new NationBuysRealEsateEntities();
+        NationBuysDB1Entities obj = new NationBuysDB1Entities();
+       
         public ActionResult Index()
         {
             return View(); 
+        }
+
+        public ActionResult TermAndConditions()
+        {
+            return View();
+        }
+
+        public ActionResult PrivacyPolicy()
+        {
+            return View();
         }
 
         public ActionResult Properties()
@@ -56,6 +67,11 @@ namespace RealEstateUpdate2.Controllers
         {
             return View();
         }
+
+        //public ActionResult Register()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Login()
         {

@@ -126,5 +126,90 @@ namespace NationBuysRealEstate.Controllers
         {
             return View(obj.Maps.Where(p => p.Id == id).First());
         }
+
+        public ActionResult UploadFileRate()
+        {
+            try
+            {
+                if (Request.Files.Count > 0)
+                {
+                    HttpPostedFileBase file = Request.Files[0];
+                    string img = @"~/wp-content/uploads/Maps/" + file.FileName.Replace(' ', '_');
+                    file.SaveAs(Server.MapPath(img));
+
+                    FileRate m = new FileRate();
+                    m.FileRates_Image = @"~/wp-content/uploads/Maps/" + file.FileName.Replace(' ', '_');
+                    obj.FileRates.Add(m);
+                    obj.SaveChanges();
+                }
+
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var validationErrors in e.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        Trace.TraceInformation("Property: {0} Error: {1}",
+                                                validationError.PropertyName,
+                                                validationError.ErrorMessage);
+                    }
+                }
+            }
+            return RedirectToAction("FileRate", "Admin");
+        }
+        public ActionResult DeleteFileRates(int id)
+        {
+            obj.FileRates.Remove(obj.FileRates.Where(p => p.Id == id).First());
+            obj.SaveChanges();
+            return RedirectToAction("FileRate", "Admin");
+        }
+
+        public ActionResult DeleteBlogs(int id)
+        {
+            obj.Blogs.Remove(obj.Blogs.Where(p => p.Id == id).First());
+            obj.SaveChanges();
+            return RedirectToAction("Blog", "Admin");
+        }
+
+        public ActionResult UploadBlog()
+        {
+            //try
+            //{
+                Blog r = new Blog();
+                r.Title = Request["Title"];
+                r.Description = Request["Description"];
+                r.Post_Date = DateTime.Parse(Request["date"]);
+                r.Media_Type = Request["select"];
+                r.Media_Source = Request["Media_Source"];
+            obj.Blogs.Add(r);
+            obj.SaveChanges();
+            //    if (Request.Files.Count > 0)
+            //    {
+            //        HttpPostedFileBase file = Request.Files[0];
+            //        string img = @"~/wp-content/uploads/Maps/" + file.FileName.Replace(' ', '_');
+            //        file.SaveAs(Server.MapPath(img));
+
+            //        FileRate m = new FileRate();
+            //        m.FileRates_Image = @"~/wp-content/uploads/Maps/" + file.FileName.Replace(' ', '_');
+            //        obj.FileRates.Add(m);
+            //        obj.SaveChanges();
+            //    }
+
+            //}
+            //catch (DbEntityValidationException e)
+            //{
+            //    foreach (var validationErrors in e.EntityValidationErrors)
+            //    {
+            //        foreach (var validationError in validationErrors.ValidationErrors)
+            //        {
+            //            Trace.TraceInformation("Property: {0} Error: {1}",
+            //                                    validationError.PropertyName,
+            //                                    validationError.ErrorMessage);
+            //        }
+            //    }
+            //}
+            return RedirectToAction("Blog", "Admin");
+        }
     }
 }
